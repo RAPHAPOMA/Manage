@@ -21,8 +21,11 @@ a{
 .navLinks a{
    color: #242D52;
    padding: 0 10px;
-   font-weight: bold;
-   
+   /* font-weight:     */
+}
+
+.navLinks a:hover{
+    color: rgb(131, 131, 131);
 }
 
 .getStarted{
@@ -35,6 +38,10 @@ a{
     color: white;
 }
 
+.getStarted:hover{
+    box-shadow: 2px 2px 4px grey;
+}
+
 #main{
     display: flex;
     align-items: center;
@@ -43,6 +50,7 @@ a{
     margin-top: 40px;
     
 }
+
 
 .mainLeft{
     width: 32%;
@@ -58,12 +66,12 @@ a{
 .mainLeft p{
     font-size: 15px;
     color: darkgray;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 
-.mainRight img{
-    width :100%;
+.mainRight{
+    width :38%;
 }
 
 #main .getStarted{
@@ -71,66 +79,64 @@ a{
     margin-top: 10px;
 }
 
-#secondmain{
+#secondmainDiv{
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    padding: 20px 150px;
+    align-items: flex-start;
+    padding: 20px 120px;
 }
-
-
-.secondmainleft{
-    width: 32%;
-    /* margin-bottom: 60px; */
-}
-
 
 .secondmainleft h1{
-    font-size: 40px;
-    font-weight: 200px;
     color: #242D52;
+    font-size: 35px;
+    font-weight: 700;
+
 }
 
 .secondmainleft p{
-    font-size: 14px;
-    color: darkgray;
-    margin-top: 30px;
-    width: 400px;
+    margin-top: 10px;
+    color: grey;
 }
 
-.secondmainright{
-    width: 32%;
-    margin-right: 100px;
+
+.topDiv{
+    width: 80%;
+    margin-left: 200px;
 }
 
+.top, .second, .last{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top p, .second p, .last p{
+    background-color: #F25F3A;
+    color: #FAFAFA;
+    padding: 2px 16px;
+    border-radius: 40px;
+}
+
+    
 .top h4, .last h4, .second h4{
     color: #242D52;
+    font-size: 17px;
 }
 
-.top, .last, .second{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    /* padding: 20px 30px; */
-}
-    
-.top p, .last p, .second p{
-    color: #fff;
-    background-color: #F25F3A;
-    width: 38px;
-    border-radius: 15px;
-    text-align: center;
-    /* margin-right: 70px\; */
-}
     
 .toptext, .secondtext, .thirdtext{
-    margin: 10px 87px;
-    font-size: 14px;
+    /* margin: 10px 87px; */
+    font-size: 15px;
     color: grey;
-    width: 400px;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
 }
 
+html, body{
+    overflow-x: hidden;
+}
 #thirdmain{
     margin-top: 90px;
 }
@@ -149,8 +155,12 @@ a{
     padding: 20px;
 }
 
+.twoperson{
+    display: flex;
+    gap: 20px;
+}
+
 .alibravo{
-    width: 25%;
     text-align: center;
     padding: 20px;
     background-color: #FAFAFA;
@@ -200,6 +210,10 @@ a{
     padding: 14px 20px;
 }
 
+#lastmain a:hover{
+    box-shadow: 2px 2px 5px grey;
+}
+
 #footer{
     background-color: #1D1E25;
     display: flex;
@@ -211,7 +225,7 @@ a{
 .bottomnavlinks{
     display: flex;
     justify-content: space-between;
-    gap: 300px;
+    gap: 160px;
     padding: 20px 70px;
 }
 
@@ -219,6 +233,19 @@ a{
     color: #fff;
 }
 
+.firstnavLinks, .secondnavLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.firstnavLinks a:hover{
+    color: #FF4213;
+}
+
+.secondnavLinks a:hover{
+    color: #FF4213;
+}
 
 .updates{
     text-align: center;
@@ -232,15 +259,246 @@ a{
     font-size: 12px;
 }
 
+.icons{
+    margin-top: 50px;
+}
+
 .icons a{
     color: white;
     font-size: 25px;
 }
 
-.icons{
-    margin-top: 20px;
+.icons a:hover{
+    margin-top: 40px;
+    color: #FF4213;
 }
 
+.updates input{
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+.updatesBtn{
+    background-color: #F25F3A;
+    padding: 6px 12px;
+    border-radius: 40px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.updatesBtn:hover{
+    box-shadow: 2px 2px 4px grey;
+}
+
+
+.bottomnavlinks a{
+    gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainRight{
+        width :50%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .mainRight{
+        margin-left: 50px;
+
+    }
+
+    .nav{
+        padding: 20px 30px;
+    }
+    
+}
+
+@media  screen and (max-width: 835px) {
+    #cyborg{
+        display: none;
+    }
+
+    .navTogler{
+        display: block;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: grey;
+        padding: 20px 10px;
+        width: 200px;
+        transition: .5s;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .mainLeft h1{
+        font-size: 30px;
+
+    }
+    .mainLeft{
+        width: 70%;
+        text-align: center;
+    }
+
+    .testimonials{
+        flex-direction: column;
+    }
+    
+    #main{
+        padding: 20px 45px;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    #secondmainDiv{
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topDiv{
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    .secondmainleft{
+        text-align: center;
+    }
+
+    .secondmainleft h1{
+        font-size: 30px;
+    }
+    
+    #lastmain {
+        padding: 14px 20px;
+    }
+
+    #footer{
+        flex-direction: column-reverse;
+    }
+
+    .topDiv{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #lastmain h1{
+        font-size: 20px;
+    }
+    
+    #lastmain a{
+    border-radius: 50px;
+    padding: 10px 16px;
+
+    }
+
+    .twoperson{
+        flex-direction: column;
+    }
+
+    .secondmainright{
+        width: 150%;
+    }
+
+    #lastmain{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .mainLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mainLeft h1{
+        font-size: 20px;
+    }
+
+    .mainLeft{
+        width: 90%;
+        text-align: center;
+    }
+
+    .secondmainleft{
+        width: 200%;
+        text-align: center; 
+    }
+
+    .secondmainleft h1{
+        font-size: 20px;
+    }
+
+    .secondmainright{
+        width: 250%;
+        align-items: center;
+
+    }
+
+    .top h4, .second h4, .last h4{
+        font-size: 13px;
+    }
+
+    #main img{
+        width: 100%;
+    }
+
+    #lastmain a{
+        padding: 3px 7px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    #lastmain{
+        flex-direction: column;
+    }
+
+    #lastmain h1{
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .top, .second, .last{
+        background-color: #FFF0D1;
+        font-size: 14px;
+    }
+
+    .toptext, .secondtext, .thirdtext{
+        margin-left: 0;
+        
+    }
+
+    .topDiv{
+        align-items: center;
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+
+    
+}
 
 
 

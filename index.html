@@ -9,24 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/owlcarousel.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- nav section -->
     <section class="nav">
-        <div>
+        <!-- <div> -->
             <a href="#">
                 <img src="/images/logo.svg" alt="my logo">
             </a>
+        <!-- </div> -->
+
+        <div class="navTogler">
+            <p class="open"> open </p>
+            <p class="close"> close </p>
+            
         </div>
         <div class="navLinks">
-            <a href="">pricing</a>
+            <a href="">Pricing</a>
             <a href="">Products</a>
             <a href="">About Us</a>
             <a href="">Careers</a>
             <a href="">Community</a>
         </div>
-        <div class="getStarted">
+        <div id="cyborg" class="getStarted">
             <a href="">Get Started</a>
         </div>
     </section>
@@ -43,21 +50,23 @@
         </div>
 
        
-        <div class="mainRight">
-            <img src="/images/illustration-intro.svg" alt="illustration image">    
-        </div>
+        <!-- <div > -->
+            <img src="/images/illustration-intro.svg" class="mainRight" alt="illustration image">    
+        <!-- </div> -->
         
     </section>
 
-    <section id="secondmain">
+    <section id="secondmainDiv">
         <div class="secondmainleft">
-       <h1>Whats different about Manage?</h1>
-       <p>manage provides all the functionality your team needs.Without the complexity. 
-           Our software is tailor-made for modern digital product teams.</p>     
+            <h1>Whats different about Manage?</h1>
+            <p>
+                Manage provides all the functionality your team needs.Without the complexity. 
+                Our software is tailor-made for modern digital product teams.
+            </p>     
         </div>
 
         <div class="secondmainright">
-            <div>
+            <div class="topDiv">
                 <div class="top">
                     <p>01</p>
                     <h4>Track company-wide progress</h4>
@@ -73,10 +82,10 @@
                     </p> 
             </div>
 
-            <div style="margin: 30px 0;">
+            <div class="topDiv">
                 <div class="second">
                     <p>02</p>
-                    <h4>Track company-wide progress</h4>
+                    <h4>Advanced Built-in Reports</h4>
                 </div>
 
                     <p class="secondtext">
@@ -87,7 +96,7 @@
                     </p> 
             </div>
             
-            <div>
+            <div class="topDiv">
                 <div class="last">
                     <p>03</p>
                     <h4>Everything you need in one place</h4>
@@ -111,50 +120,57 @@
                 <h1>What they've said</h1>
             </div>
 
+
+
             <div class="testimonials">
-                <div class="alibravo">
-                    <img src="/images/avatar-ali.png" alt="ali testimonial">
-                    <h5>Ali Bravo</h5>
-                    <P>
-                        "We have been able to cancel 
-                        so many other subscription since using Manage. 
-                        There is no more cross-channel
-                        confusion and everyone is much more focused."
-                    </P>
-
+                <div class="twoperson">
+                    <div class="alibravo">
+                        <img src="/images/avatar-ali.png" alt="ali testimonial">
+                        <h5>Ali Bravo</h5>
+                        <P>
+                            "We have been able to cancel 
+                            so many other subscription since using Manage. 
+                            There is no more cross-channel
+                            confusion and everyone is much more focused."
+                        </P>
+    
+                    </div>
+    
+                    <div class="alibravo">
+                        <img src="/images/avatar-richard.png" alt="richard testimonial">
+                        <h5>Richard Watts</h5>
+                        <P>
+                            "Manage has supercharged our team's workflow, 
+                            they help maintain visibility on larger milestones 
+                            at all times. Keeps everyone motivated."
+                        </P>
+    
+                    </div>
+    
                 </div>
-
-                <div class="alibravo">
-                    <img src="/images/avatar-richard.png" alt="richard testimonial">
-                    <h5>Richard Watts</h5>
-                    <P>
-                        "Manage has supercharged our team's workflow, 
-                        they help maintain visibility on larger milestones 
-                        at all times. Keeps everyone motivated."
-                    </P>
-
-                </div>
-
-                <div class="alibravo">
-                    <img src="/images/avatar-anisha.png" alt="anisha png">
-                    <h5>Anisha Li</h5>
-                    <P>
-                        "This software allows us track, 
-                        manage and collaborate on our projects from anywhere.
-                         It keeps the whole team in-sync without being intrusive."
-                    </P>
-
-                </div>
-
-                <div class="alibravo">
-                    <img src="/images/avatar-shanai.png" alt="shanai png">
-                    <h5>Shanai Gough</h5>
-                    <P>
-                        "Manage allows us to provide structure and process. 
-                        It keeps us organised and focused. I can't stop 
-                        recommending these to everyone IS talk to."
-                    </P>
-
+                
+                <div class="twoperson">
+                    <div class="alibravo">
+                        <img src="/images/avatar-anisha.png" alt="anisha png">
+                        <h5>Anisha Li</h5>
+                        <P>
+                            "This software allows us track, 
+                            manage and collaborate on our projects from anywhere.
+                             It keeps the whole team in-sync without being intrusive."
+                        </P>
+    
+                    </div>
+    
+                    <div class="alibravo">
+                        <img src="/images/avatar-shanai.png" alt="shanai png">
+                        <h5>Shanai Gough</h5>
+                        <P>
+                            "Manage allows us to provide structure and process. 
+                            It keeps us organised and focused. I can't stop 
+                            recommending these to everyone IS talk to."
+                        </P>
+    
+                    </div>
                 </div>
 
             </div>
@@ -195,24 +211,24 @@
 
             <div class="bottomnavlinks">
                 <div class="firstnavLinks">
-                    <a href="">Home <br></a>
-                    <a href="">Pricing <br></a>
-                    <a href="">Products <br></a>
-                    <a href="">About Us <br></a>
+                    <a href="">Home</a>
+                    <a href="">Pricing</a>
+                    <a href="">Products</a>
+                    <a href="">About Us</a>
                 </div>
 
                 <div class="secondnavLinks">
-                    <a href="">Career <br></a>
-                    <a href="">Community <br></a>
-                    <a href="">Privacy Policy <br></a>
+                    <a href="">Career</a>
+                    <a href="">Community</a>
+                    <a href="">Privacy Policy</a>
                 </div>
             </div>
 
             <div class="updates">
-                <input type="emai" id="Go">
-                <a href="">Go</a>
+                <input type="emai" id="" placeholder="Updates in your inbox">
+                <input type="submit" value="Go" class="updatesBtn">
                 <p>
-                    Copywright 2022.All Right Reserved.
+                    Copywright 2022. All Right Reserved.
                 </p>
 
             </div>
@@ -220,6 +236,10 @@
 
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    
+    <script src="./JS/main.js"></script>
    
 
 
