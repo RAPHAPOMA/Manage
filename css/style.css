@@ -5,6 +5,10 @@
     font-family: "Poppins";
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 .nav{
  background-color: #FFFFFF;
  display: flex;
@@ -12,6 +16,13 @@
  justify-content: space-between;
  padding: 20px 70px;
  /* gap: 100px;  */
+}
+.navTogler{
+    display: none;
+}
+
+.close, .open{
+    font-size: 30px;
 }
 
 a{
@@ -338,8 +349,9 @@ html, body{
         text-align: center;
         background-color: grey;
         padding: 20px 10px;
-        width: 200px;
+        width: 300px;
         transition: .5s;
+        box-shadow: 7px 7px 10px rgb(184, 184, 184);
     }
 
     
@@ -400,6 +412,39 @@ html, body{
 }
 
 @media screen and (max-width: 576px) {
+    #main{
+        padding: 20px;
+    }
+
+    .navLinks{
+        gap: 20px;
+        background-color: ghostwhite;
+    }
+
+    .mainLeft{
+        width: 90%;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .secondmainleft h1{
+        width: 400px;
+    }
+
+    .top h4, .second h4{
+    
+    }
+
+    .top, .second, .last{
+        background-color: #FFF0D1;
+    }
+
+
+    .mainRight{
+        width: 90%;
+        margin: 0 auto;
+    }
+
     #lastmain h1{
         font-size: 20px;
     }
@@ -415,7 +460,9 @@ html, body{
     }
 
     .secondmainright{
-        width: 150%;
+        width: 500px;
+        margin-left: 100px;
+        
     }
 
     #lastmain{
@@ -432,8 +479,9 @@ html, body{
 }
 
 @media screen and (max-width: 375px) {
-    .mainLeft h1{
-        font-size: 20px;
+
+    #main{
+        padding: 20px;
     }
 
     .mainLeft{
@@ -448,6 +496,7 @@ html, body{
 
     .secondmainleft h1{
         font-size: 20px;
+    
     }
 
     .secondmainright{
